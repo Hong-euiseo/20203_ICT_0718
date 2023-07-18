@@ -1,4 +1,5 @@
 import time
+import os
 
 start = time.time()
 # 1. get sequence data
@@ -32,7 +33,7 @@ for i in my_seq_comp:
         my_seq_comp_rna += "U"
     else:
         my_seq_comp_rna += i
-print(f"COMPLEMENTART RNA SEQUENCE : {my_seq_comp_rna}")
+print(f"RNA SEQUENCE : {my_seq_comp_rna}")
 
 # 4. Coding protein
 codontab = {
@@ -109,3 +110,6 @@ print(f"PROTEIN : {protein}")
 
 end = time.time()
 print(f"time : {end - start}")
+
+os.system("pause")
+# pyinstall --onefile ./biopython_2.py
